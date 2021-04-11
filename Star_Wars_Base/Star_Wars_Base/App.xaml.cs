@@ -20,9 +20,5 @@ namespace Star_Wars_Base
         {
             
         }
-
-
-
-
     }
 }

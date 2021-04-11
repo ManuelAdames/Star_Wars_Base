@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Star_Wars_Base.Views
+namespace Star_Wars_Base.ViewModels
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : MasterDetailPage
+    public partial class PeoplePage : ContentPage
     {
-        public HomePage()
+        public PeoplePage()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Star_Wars_Base.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : MasterDetailPage
+    public partial class VehiclesPage : ContentPage
     {
-        public HomePage()
+        public VehiclesPage()
         {
             InitializeComponent();
         }

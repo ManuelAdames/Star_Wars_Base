@@ -8,6 +8,9 @@
   <MasterDetailPage.Detail>
     <NavigationPage>
       <x:Arguments>
+                <ContentPage BackgroundColor="Black">
+                    
+                </ContentPage>
       </x:Arguments>
     </NavigationPage>
   </MasterDetailPage.Detail>
