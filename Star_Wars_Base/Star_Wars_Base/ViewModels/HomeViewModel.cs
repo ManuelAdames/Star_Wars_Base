@@ -6,5 +6,6 @@ namespace Star_Wars_Base.ViewModels
 {
     public class HomeViewModel
     {
+
     }
 }
