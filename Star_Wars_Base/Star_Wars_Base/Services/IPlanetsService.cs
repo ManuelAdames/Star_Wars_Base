@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Star_Wars_Base.Services
 {
-    public interface IVehicleService
+    public interface IPlanetsService
     {
-        Task<Vehicle> GetVehicleAsync();
+        Task<Planet> GetPlanetAsync();
     }
 }

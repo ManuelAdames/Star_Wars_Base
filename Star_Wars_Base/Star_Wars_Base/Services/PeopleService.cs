@@ -15,7 +15,7 @@ namespace Star_Wars_Base.Services
             Person retVal = null;
 
             HttpClient client = new HttpClient();
-            var peopleResponse = await client.GetAsync("https://swapi.dev/api/people/");
+            var peopleResponse = await client.GetAsync($"{Config.ApiUrl}/people/");
 
             if (peopleResponse.IsSuccessStatusCode)
             {

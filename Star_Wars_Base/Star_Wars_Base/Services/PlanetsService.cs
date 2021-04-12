@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Star_Wars_Base.Services
 {
-    public class PlanetService : IPlanetService
+    public class PlanetsService : IPlanetsService
     {
         public async Task<Planet> GetPlanetAsync()
         {
             Planet retVal = null;
 
             HttpClient client = new HttpClient();
-            var planetResponse = await client.GetAsync("https://swapi.dev/api/planets/");
+            var planetResponse = await client.GetAsync($"{Config.ApiUrl}/planets/");
 
             if (planetResponse.IsSuccessStatusCode)
             {

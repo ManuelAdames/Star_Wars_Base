@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Star_Wars_Base.Services
 {
-    public interface IFilmService
+    public interface IStarShipsService
     {
-        Task<Film> GetFilmAsync();
+        Task<StarShip> GetStarShipAsync();
     }
 }

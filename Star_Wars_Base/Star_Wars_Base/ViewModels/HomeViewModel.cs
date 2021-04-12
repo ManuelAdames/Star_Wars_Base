@@ -4,11 +4,16 @@ using System.Text;
 using Xamarin.Forms;
 using Star_Wars_Base.Models;
 using System.Windows.Input;
+using Prism.Services;
+using Prism.Navigation;
+using Star_Wars_Base.Views;
+using Star_Wars_Base.Constants;
 
 namespace Star_Wars_Base.ViewModels
 {
-    public class HomeViewModel
+    public class HomeViewModel : BaseViewModel
     {
+        public override string Title { get; set; } = Config.HomeTitle;
         public MenuOption Films { get; set; } = new MenuOption();
         public MenuOption People { get; set; } = new MenuOption();
         public MenuOption Planets { get; set; } = new MenuOption();
@@ -23,7 +28,7 @@ namespace Star_Wars_Base.ViewModels
         public ICommand VehiclesCommand { get; }
 
 
-        public HomeViewModel()
+        public HomeViewModel(INavigationService navigationService, IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
         {
             Films.Title = "Films"; //Films.Image = ".png";
             People.Title = "People"; //People.Image = ".png";
@@ -41,34 +46,34 @@ namespace Star_Wars_Base.ViewModels
 
         }
 
-        private void OnVehicles(object obj)
+        private async void OnVehicles(object obj)
         {
-            throw new NotImplementedException();
+            await NavigationService.NavigateAsync("/Navigate/Vehicles");
         }
 
-        private void OnStarships(object obj)
+        private async void OnStarships(object obj)
         {
-            throw new NotImplementedException();
+            await NavigationService.NavigateAsync("/Navigate/Starships");
         }
 
-        private void OnSpecies(object obj)
+        private async void OnSpecies(object obj)
         {
-            throw new NotImplementedException();
+            await NavigationService.NavigateAsync("/Navigate/Species");
         }
 
-        private void OnPlanets(object obj)
+        private async void OnPlanets(object obj)
         {
-            throw new NotImplementedException();
+            await NavigationService.NavigateAsync("/Navigate/Planets");
         }
 
-        private void OnPeople(object obj)
+        private async void OnPeople(object obj)
         {
-            throw new NotImplementedException();
+            await NavigationService.NavigateAsync("People");
         }
 
-        private void OnFilms(object obj)
+        private async void OnFilms(object obj)
         {
-            throw new NotImplementedException();
+            await NavigationService.NavigateAsync("/Navigate/Films");
         }
     }
 }

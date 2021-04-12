@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Star_Wars_Base.Services
 {
-    public class FilmService : IFilmService
+    public class FilmsService : IFilmsService
     {
         public async Task<Film> GetFilmAsync()
         {

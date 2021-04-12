@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Star_Wars_Base.Services
 {
-    public interface ISpecieService
+    public interface ISpeciesService
     {
         Task<Specie> GetSpecieAsync();
     }

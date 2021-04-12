@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Star_Wars_Base.Services
 {
-    public class VehicleService : IVehicleService
+    public class VehiclesService : IVehiclesService
     {
         public async Task<Vehicle> GetVehicleAsync()
         {
             Vehicle retVal = null;
 
             HttpClient client = new HttpClient();
-            var vehicleResponse = await client.GetAsync("https://swapi.dev/api/vehicles/");
+            var vehicleResponse = await client.GetAsync($"{Config.ApiUrl}/vehicles/");
 
             if (vehicleResponse.IsSuccessStatusCode)
             {

@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Star_Wars_Base.Services
 {
-    public class StarShipService : IStarShipService
+    public class StarShipsService : IStarShipsService
     {
         public async Task<StarShip> GetStarShipAsync()
         {
             StarShip retVal = null;
 
             HttpClient client = new HttpClient();
-            var starshipResponse = await client.GetAsync("https://swapi.dev/api/starships/");
+            var starshipResponse = await client.GetAsync($"{Config.ApiUrl}/starships/");
 
             if (starshipResponse.IsSuccessStatusCode)
             {
