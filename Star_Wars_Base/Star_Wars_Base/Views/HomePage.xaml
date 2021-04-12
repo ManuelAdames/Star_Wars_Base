@@ -24,7 +24,7 @@
                         <Button Grid.Row="2" Grid.Column="0" BackgroundColor="White" Text="{Binding Plantes.Title}" FontSize="20"  ImageSource="{Binding Planets.Image}" ContentLayout="Top,10"/>
                         <Button Grid.Row="2" Grid.Column="1" BackgroundColor="White" Text="{Binding Species.Title}" FontSize="20"  ImageSource="{Binding Species.Image}" ContentLayout="Top,10"/>
                         <Button Grid.Row="3" Grid.Column="0" BackgroundColor="White" Text="{Binding Starships.Title}" FontSize="20"  ImageSource="{Binding Starships.Image}" ContentLayout="Top,10"/>
-                        <Button Grid.Row="3" Grid.Column="1" BackgroundColor="White" Text="{Binding Vehicles.Title}s" FontSize="20"  ImageSource="{Binding Vehicles.Image}" ContentLayout="Top,10"/>
+                        <Button Grid.Row="3" Grid.Column="1" BackgroundColor="White" Text="{Binding Vehicles.Title}" FontSize="20"  ImageSource="{Binding Vehicles.Image}" ContentLayout="Top,10"/>
                     </Grid>
                 </ContentPage>
       </x:Arguments>
