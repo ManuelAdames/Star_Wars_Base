@@ -30,12 +30,12 @@ namespace Star_Wars_Base.ViewModels
 
         public HomeViewModel(INavigationService navigationService, IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
         {
-            Films.Title = "Films"; //Films.Image = ".png";
-            People.Title = "People"; //People.Image = ".png";
-            Planets.Title = "Planets"; //Planets.Image = ".png";
-            Species.Title = "Species"; //Species.Image = ".png";
-            Starships.Title = "Starships"; //Starships.Image = ".png";
-            Vehicles.Title = "Vehicles"; //Vehicles.Image = ".png";
+            Films.Title = "Films"; Films.Image = "films.png";
+            People.Title = "People"; People.Image = "people.png";
+            Planets.Title = "Planets"; Planets.Image = "planets.png";
+            Species.Title = "Species"; Species.Image = "species.png";
+            Starships.Title = "Starships"; Starships.Image = "starships.png";
+            Vehicles.Title = "Vehicles"; Vehicles.Image = "vehicles.png";
 
             FilmsCommand = new Command(OnFilms);
             PeopleCommand = new Command(OnPeople);
