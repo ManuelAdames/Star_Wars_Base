@@ -30,6 +30,8 @@ namespace Star_Wars_Base
             containerRegistry.RegisterForNavigation<SpeciesPage, HomeViewModel>(NavigationConstants.Species);
             containerRegistry.RegisterForNavigation<StarshipsPage, HomeViewModel>(NavigationConstants.Starships);
             containerRegistry.RegisterForNavigation<VehiclesPage, HomeViewModel>(NavigationConstants.Vehicles);
+            containerRegistry.RegisterForNavigation<ContactPage, HomeViewModel>(NavigationConstants.Contact);
+            containerRegistry.RegisterForNavigation<AboutUsPage, HomeViewModel>(NavigationConstants.AboutUs);
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
 

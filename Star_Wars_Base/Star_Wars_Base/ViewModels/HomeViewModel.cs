@@ -21,7 +21,10 @@ namespace Star_Wars_Base.ViewModels
         public MenuOption Species { get; set; } = new MenuOption();
         public MenuOption Starships { get; set; } = new MenuOption();
         public MenuOption Vehicles { get; set; } = new MenuOption();
- 
+        public MenuOption HomeOption { get; set; } = new MenuOption();
+        public MenuOption AboutUs { get; set; } = new MenuOption();
+        public MenuOption Contact { get; set; } = new MenuOption();
+
         public HomeViewModel(INavigationService navigationService, IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
         {
             Films.Title = "Films"; Films.Image = "yoda.png";
@@ -30,6 +33,9 @@ namespace Star_Wars_Base.ViewModels
             Species.Title = "Species"; Species.Image = "robot.png";
             Starships.Title = "Starships"; Starships.Image = "ship.png";
             Vehicles.Title = "Vehicles"; Vehicles.Image = "vehicles.png";
+            HomeOption.Title = "Home";
+            AboutUs.Title = "About Us";
+            Contact.Title = "Contact";
         }
         public DelegateCommand HomeCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("Home"));
         public DelegateCommand FilmsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Films"));
@@ -38,5 +44,8 @@ namespace Star_Wars_Base.ViewModels
         public DelegateCommand SpeciesCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Species"));
         public DelegateCommand StarshipsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Starships"));
         public DelegateCommand VehiclesCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Vehicles"));
+        public DelegateCommand ContactCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Contact"));
+        public DelegateCommand AboutUsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/AboutUs"));
+
     }
 }

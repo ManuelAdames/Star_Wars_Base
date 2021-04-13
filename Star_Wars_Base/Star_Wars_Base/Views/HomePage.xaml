@@ -7,9 +7,9 @@
   <MasterDetailPage.Master>
         <ContentPage Title="Menu" BackgroundColor="Transparent" BackgroundImageSource="wallpaper.jpg" >
             <StackLayout VerticalOptions="Center" Padding="8" >
-                <Button Text="Home" TextColor="Yellow" BackgroundColor="Transparent" Command="{Binding HomeCommand}" FontFamily="FullStarWarsFont" FontSize="30"/>
-                <Button Text="About Us" TextColor="Yellow" BackgroundColor="Transparent" FontFamily="FullStarWarsFont" FontSize="30"/>
-                <Button Text="Contact" TextColor="Yellow" BackgroundColor="Transparent" FontFamily="FullStarWarsFont" FontSize="30"/>
+                <Button Text="{Binding HomeOption.Title}" Command="{Binding HomeCommand}" Style="{StaticResource sideButton}"/>
+                <Button Text="{Binding AboutUs.Title}" Command="{Binding AboutUsCommand}" Style="{StaticResource sideButton}" />
+                <Button Text="{Binding Contact.Title}" Command="{Binding ContactCommand}" Style="{StaticResource sideButton}"/>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
@@ -18,13 +18,13 @@
       <x:Arguments>
            <ContentPage BackgroundImageSource="wallpaper.jpg">
                <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*" VerticalOptions="Center" Padding="20" >
-                        <Label Text="Star Wars Base" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" TextColor="Yellow" FontSize="50" FontFamily="FullStarWarsFont"/>
-                        <Button Grid.Row="1" Grid.Column="0" BackgroundColor="Transparent" Text="{Binding Films.Title}" FontSize="20" FontFamily="FullStarWarsFont" TextColor="Yellow" ImageSource="{Binding Films.Image}" ContentLayout="Top,10" Command="{Binding FilmsCommand}"/>
-                        <Button Grid.Row="1" Grid.Column="1" BackgroundColor="Transparent" Text="{Binding People.Title}" FontSize="20" FontFamily="FullStarWarsFont"  TextColor="Yellow" ImageSource="{Binding People.Image}" ContentLayout="Top,10" Command="{Binding PeopleCommand}"/>
-                        <Button Grid.Row="2" Grid.Column="0" BackgroundColor="Transparent" Text="{Binding Planets.Title}" FontSize="20" FontFamily="FullStarWarsFont" TextColor="Yellow" ImageSource="{Binding Planets.Image}" ContentLayout="Top,10" Command="{Binding PlanetsCommand}"/>
-                        <Button Grid.Row="2" Grid.Column="1" BackgroundColor="Transparent" Text="{Binding Species.Title}" FontSize="20" FontFamily="FullStarWarsFont" TextColor="Yellow" ImageSource="{Binding Species.Image}" ContentLayout="Top,10" Command="{Binding SpeciesCommand}"/>
-                        <Button Grid.Row="3" Grid.Column="0" BackgroundColor="Transparent" Text="{Binding Starships.Title}" FontSize="20" FontFamily="FullStarWarsFont" TextColor="Yellow" ImageSource="{Binding Starships.Image}" ContentLayout="Top,10" Command="{Binding StarshipsCommand}"/>
-                        <Button Grid.Row="3" Grid.Column="1" BackgroundColor="Transparent" Text="{Binding Vehicles.Title}" FontSize="20" FontFamily="FullStarWarsFont" TextColor="Yellow" ImageSource="{Binding Vehicles.Image}" ContentLayout="Top,10" Command="{Binding VehiclesCommand}"/>
+                        <Label Text="Star Wars Base" Grid.ColumnSpan="2" Style="{StaticResource titleStyle}"/>
+                        <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource homeButton}" Text="{Binding Films.Title}" ImageSource="{Binding Films.Image}" Command="{Binding FilmsCommand}"/>
+                        <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource homeButton}" Text="{Binding People.Title}" ImageSource="{Binding People.Image}" Command="{Binding PeopleCommand}"/>
+                        <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource homeButton}" Text="{Binding Planets.Title}" ImageSource="{Binding Planets.Image}" Command="{Binding PlanetsCommand}"/>
+                        <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource homeButton}" Text="{Binding Species.Title}" ImageSource="{Binding Species.Image}" Command="{Binding SpeciesCommand}"/>
+                        <Button Grid.Row="3" Grid.Column="0" Style="{StaticResource homeButton}" Text="{Binding Starships.Title}" ImageSource="{Binding Starships.Image}" Command="{Binding StarshipsCommand}"/>
+                        <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource homeButton}" Text="{Binding Vehicles.Title}" ImageSource="{Binding Vehicles.Image}" Command="{Binding VehiclesCommand}"/>
                </Grid>
            </ContentPage>
       </x:Arguments>

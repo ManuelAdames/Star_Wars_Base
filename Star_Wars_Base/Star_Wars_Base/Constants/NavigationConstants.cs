@@ -13,5 +13,7 @@ namespace Star_Wars_Base.Constants
         public const string Species = "Species";
         public const string Starships = "Starships";
         public const string Vehicles = "Vehicles";
+        public const string Contact = "Contact";
+        public const string AboutUs = "AboutUs";
     }
 }
