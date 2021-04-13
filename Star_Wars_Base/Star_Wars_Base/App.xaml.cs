@@ -18,7 +18,7 @@ namespace Star_Wars_Base
         protected override async void OnInitialized()
         {
             InitializeComponent();
-            await NavigationService.NavigateAsync("Home");
+            await NavigationService.NavigateAsync(NavigationConstants.Home);
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
