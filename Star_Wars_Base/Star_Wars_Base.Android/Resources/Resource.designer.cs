@@ -11805,6 +11805,9 @@ namespace Star_Wars_Base.Droid
 			// aapt resource value: 0x7F070095
 			public const int vehicles = 2131165333;
 			
+			// aapt resource value: 0x7F070096
+			public const int wallpaper = 2131165334;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

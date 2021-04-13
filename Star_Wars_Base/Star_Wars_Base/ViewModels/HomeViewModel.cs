@@ -63,7 +63,7 @@ namespace Star_Wars_Base.ViewModels
 
         private async void OnPlanets(object obj)
         {
-            await NavigationService.NavigateAsync("/Navigate/Planets");
+            await NavigationService.NavigateAsync("Planets");
         }
 
         private async void OnPeople(object obj)

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("StarWars.ttf", Alias ="StarWarsFont")]
+
 
 namespace Star_Wars_Base.Views
 {
