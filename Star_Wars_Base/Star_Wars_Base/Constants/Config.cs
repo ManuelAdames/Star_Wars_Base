@@ -9,7 +9,7 @@ namespace Star_Wars_Base
         public const string ApiUrl = "https://swapi.dev/api/";
 
         public const string HomeTitle = "Home";
-        public const string FilmTitle = "Films";
+        public const string FilmsTitle = "Films";
         public const string PeopleTitle = "People";
         public const string PlanetsTitle = "Planets";
         public const string SpeciesTitle = "Species";
