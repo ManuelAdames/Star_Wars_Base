@@ -21,25 +21,22 @@ namespace Star_Wars_Base.ViewModels
         public MenuOption Species { get; set; } = new MenuOption();
         public MenuOption Starships { get; set; } = new MenuOption();
         public MenuOption Vehicles { get; set; } = new MenuOption();
-
+ 
         public HomeViewModel(INavigationService navigationService, IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
         {
-
             Films.Title = "Films"; Films.Image = "films.png";
             People.Title = "People"; People.Image = "people.png";
             Planets.Title = "Planets"; Planets.Image = "planets.png";
             Species.Title = "Species"; Species.Image = "species.png";
             Starships.Title = "Starships"; Starships.Image = "starships.png";
             Vehicles.Title = "Vehicles"; Vehicles.Image = "vehicles.png";
-
         }
-
-        public DelegateCommand FilmsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("Films"));
-        public DelegateCommand PeopleCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("People"));
-        public DelegateCommand PlanetsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("Planets"));
-        public DelegateCommand SpeciesCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("Species"));
-        public DelegateCommand StarshipsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("Starships"));
-        public DelegateCommand VehiclesCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("Vehicles"));
-
+        public DelegateCommand HomeCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("Home"));
+        public DelegateCommand FilmsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Films"));
+        public DelegateCommand PeopleCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/People"));
+        public DelegateCommand PlanetsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Planets"));
+        public DelegateCommand SpeciesCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Species"));
+        public DelegateCommand StarshipsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Starships"));
+        public DelegateCommand VehiclesCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Vehicles"));
     }
 }

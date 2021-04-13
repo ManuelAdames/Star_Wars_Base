@@ -7,7 +7,7 @@
   <MasterDetailPage.Master>
         <ContentPage BackgroundColor="Gray" Title="Menu">
             <StackLayout VerticalOptions="Center" Padding="8" >
-                <Button Text="Home" TextColor="Black" BackgroundColor="LightGray"/>
+                <Button Text="Home" TextColor="Black" BackgroundColor="LightGray" Command="{Binding HomeCommand}" />
                 <Button Text="x" TextColor="Black" BackgroundColor="LightGray"/>
                 <Button Text="y" TextColor="Black" BackgroundColor="LightGray"/>
                 <Button Text="z" TextColor="Black" BackgroundColor="LightGray"/>

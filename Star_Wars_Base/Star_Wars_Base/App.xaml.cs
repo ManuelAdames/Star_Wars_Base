@@ -18,12 +18,12 @@ namespace Star_Wars_Base
         protected override async void OnInitialized()
         {
             InitializeComponent();
-            await NavigationService.NavigateAsync("NavigationPage/Home");
+            await NavigationService.NavigateAsync("Home");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<HomePage, HomeViewModel>("Home");
+            containerRegistry.RegisterForNavigation<HomePage, HomeViewModel>(NavigationConstants.Home);
             containerRegistry.RegisterForNavigation<FilmsPage, FilmsViewModel>(NavigationConstants.Films);
             containerRegistry.RegisterForNavigation<PeoplePage, HomeViewModel>(NavigationConstants.People);
             containerRegistry.RegisterForNavigation<PlanetsPage, HomeViewModel>(NavigationConstants.Planets);
