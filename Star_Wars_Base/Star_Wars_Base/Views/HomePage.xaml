@@ -7,10 +7,9 @@
   <MasterDetailPage.Master>
         <ContentPage Title="Menu" BackgroundColor="Transparent" BackgroundImageSource="wallpaper.jpg" >
             <StackLayout VerticalOptions="Center" Padding="8" >
-                <Button Text="Home" TextColor="Yellow" BackgroundColor="Transparent" Command="{Binding HomeCommand}" FontFamily="FullStarWarsFont" FontSize="25"/>
-                <Button Text="x" TextColor="Yellow" BackgroundColor="Transparent" FontFamily="FullStarWarsFont" FontSize="25"/>
-                <Button Text="y" TextColor="Yellow" BackgroundColor="Transparent" FontFamily="FullStarWarsFont" FontSize="25"/>
-                <Button Text="z" TextColor="Yellow" BackgroundColor="Transparent" FontFamily="FullStarWarsFont" FontSize="25"/>
+                <Button Text="Home" TextColor="Yellow" BackgroundColor="Transparent" Command="{Binding HomeCommand}" FontFamily="FullStarWarsFont" FontSize="30"/>
+                <Button Text="About Us" TextColor="Yellow" BackgroundColor="Transparent" FontFamily="FullStarWarsFont" FontSize="30"/>
+                <Button Text="Contact" TextColor="Yellow" BackgroundColor="Transparent" FontFamily="FullStarWarsFont" FontSize="30"/>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
