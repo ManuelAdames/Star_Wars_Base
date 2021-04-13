@@ -17,7 +17,7 @@
     <NavigationPage>
       <x:Arguments>
            <ContentPage BackgroundImageSource="wallpaper.jpg">
-               <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*" VerticalOptions="Center" Padding="30">
+               <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*" VerticalOptions="Center" Padding="8" >
                         <Label Text="Star Wars Base" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" TextColor="Yellow" FontSize="50" FontFamily="FullStarWarsFont"/>
                         <Button Grid.Row="1" Grid.Column="0" BackgroundColor="Transparent" Text="{Binding Films.Title}" FontSize="20" FontFamily="FullStarWarsFont" TextColor="Yellow" ImageSource="{Binding Films.Image}" ContentLayout="Top,10" Command="{Binding FilmsCommand}"/>
                         <Button Grid.Row="1" Grid.Column="1" BackgroundColor="Transparent" Text="{Binding People.Title}" FontSize="20" FontFamily="FullStarWarsFont"  TextColor="Yellow" ImageSource="{Binding People.Image}" ContentLayout="Top,10" Command="{Binding PeopleCommand}"/>

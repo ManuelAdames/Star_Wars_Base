@@ -24,11 +24,11 @@ namespace Star_Wars_Base.ViewModels
  
         public HomeViewModel(INavigationService navigationService, IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
         {
-            Films.Title = "Films"; Films.Image = "films.png";
-            People.Title = "People"; People.Image = "people.png";
+            Films.Title = "Films"; Films.Image = "yoda.png";
+            People.Title = "People"; People.Image = "stormtrooper.png";
             Planets.Title = "Planets"; Planets.Image = "planets.png";
-            Species.Title = "Species"; Species.Image = "species.png";
-            Starships.Title = "Starships"; Starships.Image = "starships.png";
+            Species.Title = "Species"; Species.Image = "robot.png";
+            Starships.Title = "Starships"; Starships.Image = "ship.png";
             Vehicles.Title = "Vehicles"; Vehicles.Image = "vehicles.png";
         }
         public DelegateCommand HomeCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("Home"));
