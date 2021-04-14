@@ -4,7 +4,7 @@
              x:Class="Star_Wars_Base.Views.FilmsPage"
              BackgroundImageSource="wallpaper.jpg">
     <ContentPage.Content>
-        <ListView ItemsSource="{Binding FilmsCollection}">
+        <ListView x:Name="FilmsList" ItemsSource="{Binding FilmsCollection}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -13,8 +13,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
-        
-            
     </ContentPage.Content>
 </ContentPage>

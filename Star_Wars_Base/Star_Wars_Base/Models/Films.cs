@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace Star_Wars_Base.Models
@@ -26,19 +27,19 @@ namespace Star_Wars_Base.Models
         public string ReleaseDate { get; set; }
 
         [JsonProperty("characters")]
-        public IList<string> Characters { get; set; }
+        public ObservableCollection<string> Characters { get; set; }
 
         [JsonProperty("planets")]
-        public IList<string> Planets { get; set; }
+        public ObservableCollection<string> Planets { get; set; }
 
         [JsonProperty("starships")]
-        public IList<string> Starships { get; set; }
+        public ObservableCollection<string> Starships { get; set; }
 
         [JsonProperty("vehicles")]
-        public IList<string> Vehicles { get; set; }
+        public ObservableCollection<string> Vehicles { get; set; }
 
         [JsonProperty("species")]
-        public IList<string> Species { get; set; }
+        public ObservableCollection<string> Species { get; set; }
 
         [JsonProperty("created")]
         public DateTime Created { get; set; }
@@ -52,7 +53,6 @@ namespace Star_Wars_Base.Models
 
     public class Film
     {
-
         [JsonProperty("count")]
         public int Count { get; set; }
 
@@ -63,8 +63,6 @@ namespace Star_Wars_Base.Models
         public object Previous { get; set; }
 
         [JsonProperty("results_films")]
-        public IList<Films> ResultsFilms { get; set; }
+        public ObservableCollection<Films> ResultsFilms { get; set; }
     }
-
 }
-
