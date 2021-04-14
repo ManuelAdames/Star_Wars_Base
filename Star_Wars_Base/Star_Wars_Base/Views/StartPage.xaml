@@ -4,8 +4,9 @@
              x:Class="Star_Wars_Base.Views.StartPage"
              BackgroundImageSource="wallpaper.jpg">
     <ContentPage.Content>
-        <StackLayout Padding="30" VerticalOptions="Center">
-            <Image x:Name ="YodaImage" Source="yodamain.png"  />
+        <StackLayout Padding="30" VerticalOptions="Center" Spacing="50">
+            <Label Text="Star Wars Base"  Style="{StaticResource titleStyle}"/>
+            <Image x:Name ="YodaImage" Source="yodamain.png"/>
             <Button Command="{Binding HomeCommand}" Text="Continue" TextColor="Black" FontFamily="FullStarWarsFont" BackgroundColor="Yellow" FontSize="30" VerticalOptions="End"/>
         </StackLayout>
     </ContentPage.Content>

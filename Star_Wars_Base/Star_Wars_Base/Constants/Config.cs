@@ -15,5 +15,6 @@ namespace Star_Wars_Base
         public const string SpeciesTitle = "Species";
         public const string StarshipsTitle = "Starships";
         public const string VehiclesTitle = "Vehicles";
+        public const string StartTitle = "Start";
     }
 }
