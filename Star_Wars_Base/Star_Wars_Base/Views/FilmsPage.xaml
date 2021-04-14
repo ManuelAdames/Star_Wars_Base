@@ -4,11 +4,17 @@
              x:Class="Star_Wars_Base.Views.FilmsPage"
              BackgroundImageSource="wallpaper.jpg">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Films!"
-                   TextColor="Yellow"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ListView ItemsSource="{Binding FilmsCollection}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding Title}" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        
+            
     </ContentPage.Content>
 </ContentPage>

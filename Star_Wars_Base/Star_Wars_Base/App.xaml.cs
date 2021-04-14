@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 using Star_Wars_Base.ViewModels;
 using Star_Wars_Base.Views;
 using Star_Wars_Base.Constants;
+using Star_Wars_Base.Services;
 
 namespace Star_Wars_Base
 {
@@ -32,7 +33,7 @@ namespace Star_Wars_Base
             containerRegistry.RegisterForNavigation<VehiclesPage, HomeViewModel>(NavigationConstants.Vehicles);
             containerRegistry.RegisterForNavigation<ContactPage, HomeViewModel>(NavigationConstants.Contact);
             containerRegistry.RegisterForNavigation<AboutUsPage, HomeViewModel>(NavigationConstants.AboutUs);
-
+            containerRegistry.Register<IFilmsService,FilmsService>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
 
         }

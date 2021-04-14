@@ -9,6 +9,7 @@ using Prism.Navigation;
 using Star_Wars_Base.Views;
 using Star_Wars_Base.Constants;
 using Prism.Commands;
+using Star_Wars_Base.Services;
 
 namespace Star_Wars_Base.ViewModels
 {
@@ -25,7 +26,7 @@ namespace Star_Wars_Base.ViewModels
         public MenuOption AboutUs { get; set; } = new MenuOption();
         public MenuOption Contact { get; set; } = new MenuOption();
 
-        public HomeViewModel(INavigationService navigationService, IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
+        public HomeViewModel(INavigationService navigationService, IPageDialogService pageDialogService, IFilmsService filmsService) : base(navigationService, pageDialogService,filmsService)
         {
             Films.Title = "Films"; Films.Image = "yoda.png";
             People.Title = "People"; People.Image = "stormtrooper.png";
