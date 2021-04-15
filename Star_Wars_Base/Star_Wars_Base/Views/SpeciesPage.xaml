@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Star_Wars_Base.Views.SpeciesPage"
-             BackgroundImageSource="wallpaper.jpg">
+             BackgroundImageSource="specieswallpaper.jpg">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Species"
+            <Label Text="holis"
                 TextColor="Yellow"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

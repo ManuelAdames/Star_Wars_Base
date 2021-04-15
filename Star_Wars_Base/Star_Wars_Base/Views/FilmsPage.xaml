@@ -2,13 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Star_Wars_Base.Views.FilmsPage"
-             BackgroundImageSource="wallpaper.jpg">
-    <StackLayout Padding="10">
+             BackgroundImageSource="FilmsWallpaper.jpg">
+    <StackLayout Padding="10" Spacing="80">
         <Label Text="Films" Style="{StaticResource titleStyle}"/> 
         <ListView x:Name="FilmsList" ItemsSource="{Binding FilmsCollection}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Title}" TextColor="Yellow"/>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            
+                        </ViewCell.ContextActions>
+                        <StackLayout HorizontalOptions="Center">
+                            <Label Text="{Binding Title}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <!--<TextCell Text="{Binding Title}" TextColor="Yellow"/>-->
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
