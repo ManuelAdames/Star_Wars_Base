@@ -12,7 +12,7 @@
                         <ViewCell.ContextActions>
                         </ViewCell.ContextActions>
                         <StackLayout HorizontalOptions="Center">
-                            <Label Text="{Binding Title}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
+                            <Label Text="{Binding FilmTitle}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
                         </StackLayout>
                     </ViewCell>
                     <!--<TextCell Text="{Binding Title}" TextColor="Yellow"/>-->

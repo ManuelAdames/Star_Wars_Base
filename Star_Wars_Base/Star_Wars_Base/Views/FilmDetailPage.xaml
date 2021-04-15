@@ -5,9 +5,9 @@
              BackgroundImageSource="FilmsWallpaper.jpg">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="{Binding FilmTitle}"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" TextColor="Yellow" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

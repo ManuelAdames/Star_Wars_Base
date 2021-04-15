@@ -9,7 +9,7 @@ namespace Star_Wars_Base.Models
     public class Films
     {
         [JsonProperty("title")]
-        public string Title { get; set; }
+        public string FilmTitle { get; set; }
 
         [JsonProperty("episode_id")]
         public int EpisodeId { get; set; }
