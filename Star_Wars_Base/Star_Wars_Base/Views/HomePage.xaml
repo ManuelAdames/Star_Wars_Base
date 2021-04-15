@@ -2,7 +2,6 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Star_Wars_Base.Views.HomePage"
-             Title="{Binding Title}"
              xmlns:pages="clr-namespace:Star_Wars_Base.Views">
   <MasterDetailPage.Master>
         <ContentPage Title="Menu" BackgroundColor="Transparent" BackgroundImageSource="wallpaper.jpg" >

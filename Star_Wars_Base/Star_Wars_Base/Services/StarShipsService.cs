@@ -1,4 +1,5 @@
-﻿using Star_Wars_Base.Models;
+﻿using Newtonsoft.Json;
+using Star_Wars_Base.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -15,12 +16,12 @@ namespace Star_Wars_Base.Services
             StarShip retVal = null;
 
             HttpClient client = new HttpClient();
-            var starshipResponse = await client.GetAsync($"{Config.ApiUrl}/starships/");
+            var starshipResponse = await client.GetAsync("https://swapi.dev/api/starships/");
 
             if (starshipResponse.IsSuccessStatusCode)
             {
                 var jsonPayLoad = await starshipResponse.Content.ReadAsStringAsync();
-                retVal = JsonSerializer.Deserialize<StarShip>(jsonPayLoad);
+                retVal = JsonConvert.DeserializeObject<StarShip>(await starshipResponse.Content.ReadAsStringAsync()); ;
             }
             return retVal;
         }

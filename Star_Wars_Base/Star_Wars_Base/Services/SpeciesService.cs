@@ -1,4 +1,5 @@
-﻿using Star_Wars_Base.Models;
+﻿using Newtonsoft.Json;
+using Star_Wars_Base.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -15,12 +16,12 @@ namespace Star_Wars_Base.Services
             Specie retVal = null;
 
             HttpClient client = new HttpClient();
-            var specieResponse = await client.GetAsync($"{Config.ApiUrl}/planets/");
+            var speciesResponse = await client.GetAsync($"{Config.ApiUrl}/planets/");
 
-            if (specieResponse.IsSuccessStatusCode)
+            if (speciesResponse.IsSuccessStatusCode)
             {
-                var jsonPayLoad = await specieResponse.Content.ReadAsStringAsync();
-                retVal = JsonSerializer.Deserialize<Specie>(jsonPayLoad);
+                var jsonPayLoad = await speciesResponse.Content.ReadAsStringAsync();
+                retVal = JsonConvert.DeserializeObject<Specie>(await speciesResponse.Content.ReadAsStringAsync()); ;
             }
             return retVal;
         }

@@ -1,4 +1,5 @@
-﻿using Star_Wars_Base.Models;
+﻿using Newtonsoft.Json;
+using Star_Wars_Base.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -15,12 +16,12 @@ namespace Star_Wars_Base.Services
             Vehicle retVal = null;
 
             HttpClient client = new HttpClient();
-            var vehicleResponse = await client.GetAsync($"{Config.ApiUrl}/vehicles/");
+            var vehicleResponse = await client.GetAsync("https://swapi.dev/api/vehicles/");
 
             if (vehicleResponse.IsSuccessStatusCode)
             {
                 var jsonPayLoad = await vehicleResponse.Content.ReadAsStringAsync();
-                retVal = JsonSerializer.Deserialize<Vehicle>(jsonPayLoad);
+                retVal = JsonConvert.DeserializeObject<Vehicle>(await vehicleResponse.Content.ReadAsStringAsync()); ;
             }
             return retVal;
         }

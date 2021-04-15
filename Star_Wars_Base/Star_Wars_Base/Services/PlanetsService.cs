@@ -1,4 +1,5 @@
-﻿using Star_Wars_Base.Models;
+﻿using Newtonsoft.Json;
+using Star_Wars_Base.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -15,12 +16,12 @@ namespace Star_Wars_Base.Services
             Planet retVal = null;
 
             HttpClient client = new HttpClient();
-            var planetResponse = await client.GetAsync($"{Config.ApiUrl}/planets/");
+            var planetResponse = await client.GetAsync("https://swapi.dev/api/planets/");
 
             if (planetResponse.IsSuccessStatusCode)
             {
                 var jsonPayLoad = await planetResponse.Content.ReadAsStringAsync();
-                retVal = JsonSerializer.Deserialize<Planet>(jsonPayLoad);
+                retVal = JsonConvert.DeserializeObject<Planet>(await planetResponse.Content.ReadAsStringAsync()); ;
             }
             return retVal;
         }
