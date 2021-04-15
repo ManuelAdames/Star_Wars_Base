@@ -1,4 +1,5 @@
-﻿using Star_Wars_Base.Models;
+﻿using Newtonsoft.Json;
+using Star_Wars_Base.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -20,7 +21,7 @@ namespace Star_Wars_Base.Services
             if (filmResponse.IsSuccessStatusCode)
             {
                 var jsonPayLoad = await filmResponse.Content.ReadAsStringAsync();
-                retVal = JsonSerializer.Deserialize<Film>(jsonPayLoad);
+                retVal = JsonConvert.DeserializeObject<Film>(await filmResponse.Content.ReadAsStringAsync()); ;
             }
             return retVal;
         }

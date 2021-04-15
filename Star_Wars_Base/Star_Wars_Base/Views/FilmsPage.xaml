@@ -4,11 +4,11 @@
              x:Class="Star_Wars_Base.Views.FilmsPage"
              BackgroundImageSource="wallpaper.jpg">
     <ContentPage.Content>
-        <ListView x:Name="FilmsList" ItemsSource="{Binding FilmsCollection}">
+        <ListView x:Name="FilmsList" ItemsSource="{Binding FilmsCollection}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Label Text="{Binding Title}" />
+                        <Label Text="{Binding Title}" TextColor="White"/>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

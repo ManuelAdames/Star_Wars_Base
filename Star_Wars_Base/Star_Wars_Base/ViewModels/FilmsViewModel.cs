@@ -18,13 +18,14 @@ namespace Star_Wars_Base.ViewModels
         public FilmsViewModel(INavigationService navigationService, IPageDialogService pageDialogService, IFilmsService filmsService) : base(navigationService, pageDialogService,filmsService)
         {
             GetApp();
+
         }
 
         public async Task GetFilmList()
         {
             var getfilms = await FilmsService.GetFilmAsync();
             FilmsCollection = new ObservableCollection<Films>(getfilms.ResultsFilms);
-        } 
+        }
 
         public async void GetApp()
         {
