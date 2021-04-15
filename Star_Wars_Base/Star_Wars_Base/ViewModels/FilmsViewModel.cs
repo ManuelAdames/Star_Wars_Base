@@ -24,7 +24,7 @@ namespace Star_Wars_Base.ViewModels
         public async Task GetFilmList()
         {
             var getfilms = await FilmsService.GetFilmAsync();
-            FilmsCollection = new ObservableCollection<Films>(getfilms.Results);
+            FilmsCollection = new ObservableCollection<Films>(getfilms.ResultsFilms);
         }
 
         public async void GetApp()

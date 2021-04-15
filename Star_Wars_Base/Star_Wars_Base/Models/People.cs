@@ -68,7 +68,7 @@ namespace Star_Wars_Base.Models
         [JsonProperty("previous")]
         public object Previous { get; set; }
 
-        [JsonProperty("results_people")]
+        [JsonProperty("results")]
         public IList<People> ResultsPeople { get; set; }
     }
 }

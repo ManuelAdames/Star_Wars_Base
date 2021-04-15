@@ -63,6 +63,6 @@ namespace Star_Wars_Base.Models
             public object Previous { get; set; }
 
             [JsonProperty("results")]
-            public ObservableCollection<Films> Results { get; set; }
+            public ObservableCollection<Films> ResultsFilms { get; set; }
         }
 }
