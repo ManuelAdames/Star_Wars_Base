@@ -20,7 +20,6 @@ namespace Star_Wars_Base.Services
 
             if (vehicleResponse.IsSuccessStatusCode)
             {
-                var jsonPayLoad = await vehicleResponse.Content.ReadAsStringAsync();
                 retVal = JsonConvert.DeserializeObject<Vehicle>(await vehicleResponse.Content.ReadAsStringAsync()); ;
             }
             return retVal;
