@@ -56,13 +56,13 @@ namespace Star_Wars_Base.Models
             [JsonProperty("count")]
             public int Count { get; set; }
 
-            [JsonProperty("next")]
-            public object Next { get; set; }
+            //[JsonProperty("next")]
+            //public object Next { get; set; }
 
-            [JsonProperty("previous")]
-            public object Previous { get; set; }
+            //[JsonProperty("previous")]
+            //public object Previous { get; set; }
 
-            [JsonProperty("results_films")]
-            public ObservableCollection<Films> ResultsFilms { get; set; }
+            [JsonProperty("results")]
+            public ObservableCollection<Films> Results { get; set; }
         }
 }
