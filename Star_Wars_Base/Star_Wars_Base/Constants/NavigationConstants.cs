@@ -16,5 +16,6 @@ namespace Star_Wars_Base.Constants
         public const string Contact = "Contact";
         public const string AboutUs = "AboutUs";
         public const string StartPage = "StartPage";
+        public const string FilmDetailPage = "FilmDetail";
     }
 }

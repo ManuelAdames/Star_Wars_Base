@@ -34,6 +34,7 @@ namespace Star_Wars_Base
             containerRegistry.RegisterForNavigation<ContactPage, HomeViewModel>(NavigationConstants.Contact);
             containerRegistry.RegisterForNavigation<AboutUsPage, HomeViewModel>(NavigationConstants.AboutUs);
             containerRegistry.RegisterForNavigation<StartPage, HomeViewModel>(NavigationConstants.StartPage);
+            containerRegistry.RegisterForNavigation<FilmDetailPage, FilmsViewModel>(NavigationConstants.FilmDetailPage);
             containerRegistry.Register<IFilmsService,FilmsService>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
 

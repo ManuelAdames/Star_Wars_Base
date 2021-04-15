@@ -4,13 +4,12 @@
              x:Class="Star_Wars_Base.Views.FilmsPage"
              BackgroundImageSource="FilmsWallpaper.jpg">
     <StackLayout Padding="10" Spacing="80">
-        <Label Text="Films" Style="{StaticResource titleStyle}"/> 
-        <ListView x:Name="FilmsList" ItemsSource="{Binding FilmsCollection}" >
+        <Label Text="Films" Style="{StaticResource titleStyle}"/>
+        <ListView x:Name="FilmsList" ItemsSource="{Binding FilmsCollection}" ItemTapped="FilmsList_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.ContextActions>
-                            
                         </ViewCell.ContextActions>
                         <StackLayout HorizontalOptions="Center">
                             <Label Text="{Binding Title}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
