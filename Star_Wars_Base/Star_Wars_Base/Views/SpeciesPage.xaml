@@ -3,12 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Star_Wars_Base.Views.SpeciesPage"
              BackgroundImageSource="wallpaper.jpg">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Species"
-                TextColor="Yellow"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout Padding="10">
+        <Label Text="Species" Style="{StaticResource titleStyle}"/>
+        <ListView x:Name="SpeciesList" ItemsSource="{Binding SpecieCollection}" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" TextColor="Yellow"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

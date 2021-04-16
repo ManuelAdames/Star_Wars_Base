@@ -26,7 +26,7 @@ namespace Star_Wars_Base.ViewModels
         public MenuOption AboutUs { get; set; } = new MenuOption();
         public MenuOption Contact { get; set; } = new MenuOption();
 
-        public HomeViewModel(INavigationService navigationService, IPageDialogService pageDialogService, IFilmsService filmsService) : base(navigationService, pageDialogService,filmsService)
+        public HomeViewModel(INavigationService navigationService, IPageDialogService pageDialogService, IFilmsService filmsService, IPeopleService peopleService, IPlanetsService planetsService, ISpeciesService speciesService, IStarShipsService starShipsService, IVehiclesService vehiclesService) : base(navigationService, pageDialogService,filmsService, peopleService, planetsService, speciesService, starShipsService, vehiclesService)
         {
             Films.Title = "Films"; Films.Image = "yoda.png";
             People.Title = "People"; People.Image = "stormtrooper.png";

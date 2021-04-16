@@ -3,12 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Star_Wars_Base.ViewModels.PeoplePage"
              BackgroundImageSource="wallpaper.jpg">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="People"
-                TextColor="Yellow"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout Padding="10">
+        <Label Text="People" Style="{StaticResource titleStyle}"/>
+        <ListView x:Name="PeopleList" ItemsSource="{Binding PeopleCollection}" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" TextColor="Yellow"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

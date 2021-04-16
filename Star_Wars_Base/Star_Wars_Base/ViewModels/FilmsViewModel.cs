@@ -15,7 +15,7 @@ namespace Star_Wars_Base.ViewModels
         public override string Title { get; set; } = Config.FilmsTitle;
         public ObservableCollection<Films> FilmsCollection { get; set; } = new ObservableCollection<Films>();
 
-        public FilmsViewModel(INavigationService navigationService, IPageDialogService pageDialogService, IFilmsService filmsService) : base(navigationService, pageDialogService,filmsService)
+        public FilmsViewModel(INavigationService navigationService, IPageDialogService pageDialogService, IFilmsService filmsService, IPeopleService peopleService, IPlanetsService planetsService, ISpeciesService speciesService, IStarShipsService starShipsService, IVehiclesService vehiclesService) : base(navigationService, pageDialogService,filmsService,peopleService,planetsService,speciesService,starShipsService,vehiclesService)
         {
             GetApp();
 
