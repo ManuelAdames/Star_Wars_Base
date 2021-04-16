@@ -3,12 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Star_Wars_Base.Views.PlanetsPage"
              BackgroundImageSource="planetswallpaper.jpg">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Planets"
-                TextColor="Yellow"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout Padding="10" Spacing="80">
+        <Label Text="Planets" Style="{StaticResource titleStyle}"/>
+        <ActivityIndicator IsRunning="{Binding IIIsBusy}" IsVisible="{Binding IIIsBusy}"/>
+        <ListView x:Name="PlanetsList" ItemsSource="{Binding PlanetsCollection}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                        </ViewCell.ContextActions>
+                        <StackLayout HorizontalOptions="Center">
+                            <Label Text="{Binding PlanetsName}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

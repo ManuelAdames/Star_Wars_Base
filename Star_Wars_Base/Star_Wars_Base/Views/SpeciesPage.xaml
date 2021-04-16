@@ -3,12 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Star_Wars_Base.Views.SpeciesPage"
              BackgroundImageSource="specieswallpaper.jpg">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="holis"
-                TextColor="Yellow"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout Padding="10" Spacing="80">
+        <Label Text="Species" Style="{StaticResource titleStyle}"/>
+        <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+        <ListView x:Name="SpeciesList" ItemsSource="{Binding SpeciesCollection}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout HorizontalOptions="Center">
+                            <Label Text="{Binding SpeciesName}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

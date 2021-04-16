@@ -16,7 +16,7 @@ namespace Star_Wars_Base.Services
             Specie retVal = null;
 
             HttpClient client = new HttpClient();
-            var speciesResponse = await client.GetAsync($"{Config.ApiUrl}/planets/");
+            var speciesResponse = await client.GetAsync("https://swapi.dev/api/species/");
 
             if (speciesResponse.IsSuccessStatusCode)
             {

@@ -3,12 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Star_Wars_Base.Views.VehiclesPage"
              BackgroundImageSource="vehicleswallpaper.jpg">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Vehicles"
-                   TextColor="Yellow"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout Padding="10" Spacing="80">
+        <Label Text="Vehicles" Style="{StaticResource titleStyle}"/>
+        <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+        <ListView x:Name="VehiclesList" ItemsSource="{Binding VehiclesCollection}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout HorizontalOptions="Center">
+                            <Label Text="{Binding VehiclesName}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>
