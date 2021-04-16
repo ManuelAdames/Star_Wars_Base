@@ -30,10 +30,5 @@ namespace Star_Wars_Base.Views
                 }
             }
         }
-        //private void Animate()
-        //{
-        //    YodaImage.RotateTo(360, 800, Easing.Linear);
-        //    YodaImage.RotateTo(0, 0);
-        //}
     }
 }

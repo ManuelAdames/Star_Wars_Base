@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Star_Wars_Base.Views.StarshipsDetailPage"
-             BackgroundImageSource="starshipswallpaper.jpg">
-    
+             x:Class="Star_Wars_Base.Views.VehicleDetailPage"
+            BackgroundImageSource="vehicleswallpaper.jpg">
+
     <ContentPage.Content>
         <StackLayout Padding="30" Spacing="10">
             <Label x:Name="LabelName" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" />
+            <Label x:Name="LabelModel" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
             <Label x:Name="LabelCost" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
             <Label x:Name="LabelPassengers" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
             <Label x:Name="LabelSpeed" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>

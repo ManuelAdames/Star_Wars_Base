@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Star_Wars_Base.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,12 @@ namespace Star_Wars_Base.Views
         public PlanetsPage()
         {
             InitializeComponent();
+        }
+
+        private async void PlanetsList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var mySelectedItem = e.Item as Planets;
+            await Navigation.PushAsync(new PlanetsDetailPage(mySelectedItem.PlanetsName, mySelectedItem.Climate, mySelectedItem.Gravity, mySelectedItem.Terrain, mySelectedItem.Population));
         }
     }
 }

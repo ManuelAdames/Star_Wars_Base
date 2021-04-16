@@ -6,7 +6,7 @@
     <StackLayout Padding="10" Spacing="80">
         <Label Text="Starships" Style="{StaticResource titleStyle}"/>
         <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
-        <ListView x:Name="StarshipsList" ItemsSource="{Binding StarshipsCollection}">
+        <ListView x:Name="StarshipsList" ItemsSource="{Binding StarshipsCollection}" ItemTapped="StarshipsList_ItemTapped" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

@@ -1,10 +1,15 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Star_Wars_Base.Views.SpeciesDetailPage">
-  <ContentView.Content>
-      <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
-      </StackLayout>
-  </ContentView.Content>
-</ContentView>
+             x:Class="Star_Wars_Base.Views.SpeciesDetailPage"
+             BackgroundImageSource="specieswallpaper.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="10">
+            <Label x:Name="LabelName" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" />
+            <Label x:Name="LabelClassification" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
+            <Label x:Name="LabelLanguage" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
+            <Label x:Name="LabelLifespan" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
+            <Label x:Name="LabelDesignation" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

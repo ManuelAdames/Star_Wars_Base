@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,11 +11,16 @@ using Xamarin.Forms.Xaml;
 namespace Star_Wars_Base.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PeopleDetailPage : ContentView
+    public partial class PeopleDetailPage : ContentPage
     {
-        public PeopleDetailPage()
+        public PeopleDetailPage(string name, string gender, string homeWorld, string birthYear)
         {
             InitializeComponent();
+            LabelName.Text = name;
+            LabelGender.Text = gender;
+            LabelWorld.Text = homeWorld;
+            LabelBirthYear.Text = birthYear;
+
         }
     }
 }
