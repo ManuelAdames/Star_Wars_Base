@@ -5,13 +5,20 @@
             BackgroundImageSource="vehicleswallpaper.jpg">
 
     <ContentPage.Content>
-        <StackLayout Padding="30" Spacing="10">
-            <Label x:Name="LabelName" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" />
-            <Label x:Name="LabelModel" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelCost" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelPassengers" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelSpeed" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelCrew" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="20">
+                <Label x:Name="LabelName" Style="{StaticResource detailTitle}" />
+                <Label Text="Model" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelModel" Style="{StaticResource detailStyle}"/>
+                <Label Text="Cost" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelCost" Style="{StaticResource detailStyle}"/>
+                <Label Text="Passengers" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelPassengers" Style="{StaticResource detailStyle}"/>
+                <Label Text="Maximum Atmospheric Speed" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelSpeed" Style="{StaticResource detailStyle}"/>
+                <Label Text="Crew" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelCrew" Style="{StaticResource detailStyle}"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

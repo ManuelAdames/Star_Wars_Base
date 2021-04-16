@@ -24,6 +24,37 @@
                 <Setter Property="FontFamily" Value="FullStarWarsFont"/>
                 <Setter Property="FontSize" Value="30"/>
             </Style>
+            <Style x:Key="detailTitle" TargetType="Label">
+                <Setter Property="TextColor" Value="NavajoWhite"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value="FullStarWarsFont"/>
+                <Setter Property="FontSize" Value="32"/>
+            </Style>
+            <Style x:Key="detailStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="NavajoWhite"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value="FullStarWarsFont"/>
+                <Setter Property="FontSize" Value="22"/>
+            </Style>
+            <Style x:Key="detailName" TargetType="Label">
+                <Setter Property="TextColor" Value="NavajoWhite"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value="FullStarWarsFont"/>
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+            </Style>
+            <Style x:Key="extraText" TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontFamily" Value="FullStarWarsFont"/>
+                <Setter Property="TextColor" Value="Yellow"/>
+            </Style>
+            <Style x:Key="listStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontFamily" Value="FullStarWarsFont"/>
+                <Setter Property="TextColor" Value="NavajoWhite"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>
+

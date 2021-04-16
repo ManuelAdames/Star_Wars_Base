@@ -13,12 +13,11 @@ namespace Star_Wars_Base.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PeopleDetailPage : ContentPage
     {
-        public PeopleDetailPage(string name, string gender, string homeWorld, string birthYear)
+        public PeopleDetailPage(string name, string gender, string birthYear)
         {
             InitializeComponent();
             LabelName.Text = name;
             LabelGender.Text = gender;
-            LabelWorld.Text = homeWorld;
             LabelBirthYear.Text = birthYear;
 
         }

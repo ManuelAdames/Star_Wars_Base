@@ -11,7 +11,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout HorizontalOptions="Center">
-                            <Label Text="{Binding SpeciesName}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
+                            <Label Text="{Binding SpeciesName}" Style="{StaticResource listStyle}"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

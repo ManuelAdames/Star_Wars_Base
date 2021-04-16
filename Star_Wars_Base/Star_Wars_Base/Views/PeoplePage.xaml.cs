@@ -23,7 +23,7 @@ namespace Star_Wars_Base.ViewModels
         private async void PeopleList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var mySelectedItem = e.Item as People;
-            await Navigation.PushAsync(new PeopleDetailPage(mySelectedItem.PeopleName, mySelectedItem.Gender, mySelectedItem.Homeworld, mySelectedItem.BirthYear));
+            await Navigation.PushAsync(new PeopleDetailPage(mySelectedItem.PeopleName, mySelectedItem.Gender, mySelectedItem.BirthYear));
         }
     }
 }

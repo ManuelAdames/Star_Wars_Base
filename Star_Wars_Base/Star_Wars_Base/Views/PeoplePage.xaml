@@ -11,7 +11,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout HorizontalOptions="Center">
-                            <Label Text="{Binding PeopleName} " TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
+                            <Label Text="{Binding PeopleName} " Style="{StaticResource listStyle}"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

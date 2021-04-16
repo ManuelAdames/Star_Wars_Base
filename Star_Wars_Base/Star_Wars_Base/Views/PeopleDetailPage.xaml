@@ -5,11 +5,14 @@
              BackgroundImageSource="PeopleWallpaper.jpg">
     
     <ContentPage.Content>
-        <StackLayout Padding="30" Spacing="10">
-            <Label x:Name="LabelName" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelGender" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelWorld" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelBirthYear" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="20">
+                <Label x:Name="LabelName" Style="{StaticResource detailTitle}"/>
+                <Label Text="Gender" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelGender" Style="{StaticResource detailStyle}"/>
+                <Label Text="Birth Year" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelBirthYear" Style="{StaticResource detailStyle}"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

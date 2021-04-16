@@ -4,11 +4,9 @@
              x:Class="Star_Wars_Base.Views.ContactPage"
              BackgroundImageSource="wallpaper.jpg">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Contact"
-                   TextColor="Yellow"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="30" VerticalOptions="Center">
+            <Label Text="Manuel Adames" Style="{StaticResource extraText}" />
+            <Label Text="1073122@est.intec.edu.do" Style="{StaticResource extraText}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

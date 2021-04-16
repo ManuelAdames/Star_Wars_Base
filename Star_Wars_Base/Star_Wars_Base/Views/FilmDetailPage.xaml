@@ -4,21 +4,16 @@
              x:Class="Star_Wars_Base.Views.FilmDetailPage"
              BackgroundImageSource="FilmsWallpaper.jpg">
     <ContentPage.Content>
-        <StackLayout Padding="20" Spacing="20">
-            <Label Text="Title" VerticalOptions="Center" 
-                HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="18"/>
-            <Label x:Name="LabelFilmTitle"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="18" />
-            <Label x:Name="LabelDate"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="18"/>
-            <Label x:Name="LabelOpeningCrawl"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="18"/>
-            <Label x:Name="LabelDirector"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="18"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="20">
+                <Label x:Name="LabelFilmTitle" Style="{StaticResource detailTitle}"/>
+                <Label Text="Release Date" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelDate" Style="{StaticResource detailStyle}"/>
+                <Label Text="Opening Crawl" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelOpeningCrawl" Style="{StaticResource detailStyle}"/>
+                <Label Text="Director" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelDirector" Style="{StaticResource detailStyle}"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

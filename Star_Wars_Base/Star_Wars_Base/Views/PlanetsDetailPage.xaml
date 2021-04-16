@@ -4,12 +4,18 @@
              x:Class="Star_Wars_Base.Views.PlanetsDetailPage"
              BackgroundImageSource="planetswallpaper.jpg">
     <ContentPage.Content>
-        <StackLayout Padding="30" Spacing="10">
-            <Label x:Name="LabelName" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelClimate" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelGravity" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelTerrain" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-            <Label x:Name="LabelPopulation" VerticalOptions="Center" HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="20">
+                <Label x:Name="LabelName" Style="{StaticResource detailTitle}"/>
+                <Label Text="Climate" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelClimate" Style="{StaticResource detailStyle}"/>
+                <Label Text="Gravity" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelGravity" Style="{StaticResource detailStyle}"/>
+                <Label Text="Terrain" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelTerrain" Style="{StaticResource detailStyle}"/>
+                <Label Text="Population" Style="{StaticResource detailName}"/>
+                <Label x:Name="LabelPopulation" Style="{StaticResource detailStyle}"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

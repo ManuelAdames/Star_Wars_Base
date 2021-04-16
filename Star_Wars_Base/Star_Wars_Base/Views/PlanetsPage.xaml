@@ -13,7 +13,7 @@
                         <ViewCell.ContextActions>
                         </ViewCell.ContextActions>
                         <StackLayout HorizontalOptions="Center">
-                            <Label Text="{Binding PlanetsName}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
+                            <Label Text="{Binding PlanetsName}" Style="{StaticResource listStyle}"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

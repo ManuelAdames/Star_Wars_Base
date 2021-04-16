@@ -4,11 +4,12 @@
              x:Class="Star_Wars_Base.Views.AboutUsPage"
              BackgroundImageSource="wallpaper.jpg">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="About Us"
-                   TextColor="Yellow"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="30" Spacing="40">
+                <Label Text="Who are we?" Style="{StaticResource extraText}" />
+                <Label Text="We are two students currently at INTEC in Santo Domingo, in the process of learning Xamarin Forms. We decided to make an app with a Star Wars API to show the skills we've adquiered in just 3 months."
+                       Style="{StaticResource extraText}" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
