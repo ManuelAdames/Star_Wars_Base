@@ -7,6 +7,8 @@
         <StackLayout Padding="30" VerticalOptions="Center">
             <Label Text="Manuel Adames" Style="{StaticResource extraText}" />
             <Label Text="1073122@est.intec.edu.do" Style="{StaticResource extraText}"/>
+            <Label Text="Jean Carlos" Style="{StaticResource extraText}" />
+            <Label Text="1078057@est.intec.edu.do" Style="{StaticResource extraText}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
