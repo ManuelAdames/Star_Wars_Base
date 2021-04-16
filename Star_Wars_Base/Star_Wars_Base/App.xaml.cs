@@ -26,16 +26,25 @@ namespace Star_Wars_Base
         {
             containerRegistry.RegisterForNavigation<HomePage, HomeViewModel>(NavigationConstants.Home);
             containerRegistry.RegisterForNavigation<FilmsPage, FilmsViewModel>(NavigationConstants.Films);
-            containerRegistry.RegisterForNavigation<PeoplePage, HomeViewModel>(NavigationConstants.People);
-            containerRegistry.RegisterForNavigation<PlanetsPage, HomeViewModel>(NavigationConstants.Planets);
-            containerRegistry.RegisterForNavigation<SpeciesPage, HomeViewModel>(NavigationConstants.Species);
-            containerRegistry.RegisterForNavigation<StarshipsPage, HomeViewModel>(NavigationConstants.Starships);
-            containerRegistry.RegisterForNavigation<VehiclesPage, HomeViewModel>(NavigationConstants.Vehicles);
+            containerRegistry.RegisterForNavigation<PeoplePage, PeopleViewModel>(NavigationConstants.People);
+            containerRegistry.RegisterForNavigation<PlanetsPage, PlanetsViewModel>(NavigationConstants.Planets);
+            containerRegistry.RegisterForNavigation<SpeciesPage, SpeciesViewModel>(NavigationConstants.Species);
+            containerRegistry.RegisterForNavigation<StarshipsPage, StarshipsViewModel>(NavigationConstants.Starships);
+            containerRegistry.RegisterForNavigation<VehiclesPage, VehiclesViewModel>(NavigationConstants.Vehicles);
+           
             containerRegistry.RegisterForNavigation<ContactPage, HomeViewModel>(NavigationConstants.Contact);
             containerRegistry.RegisterForNavigation<AboutUsPage, HomeViewModel>(NavigationConstants.AboutUs);
             containerRegistry.RegisterForNavigation<StartPage, HomeViewModel>(NavigationConstants.StartPage);
+            
             containerRegistry.RegisterForNavigation<FilmDetailPage, FilmsViewModel>(NavigationConstants.FilmDetailPage);
+            
             containerRegistry.Register<IFilmsService,FilmsService>();
+            containerRegistry.Register<IPeopleService,PeopleService>();
+            containerRegistry.Register<IPlanetsService, PlanetsService>();
+            containerRegistry.Register<ISpeciesService, SpeciesService>();
+            containerRegistry.Register<IStarShipsService, StarShipsService>();
+            containerRegistry.Register<IVehiclesService, VehiclesService>();
+            
             containerRegistry.RegisterForNavigation<NavigationPage>();
 
         }

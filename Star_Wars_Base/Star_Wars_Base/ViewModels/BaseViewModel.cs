@@ -12,14 +12,12 @@ namespace Star_Wars_Base.ViewModels
     {
         public abstract string Title { get; set; }
         protected INavigationService NavigationService { get; }
-        protected IFilmsService FilmsService { get; }
         protected IPageDialogService AlertService { get; }
 
-        protected BaseViewModel(INavigationService navigationService,IPageDialogService pageDialogService,IFilmsService filmsService)
+        protected BaseViewModel(INavigationService navigationService,IPageDialogService pageDialogService)
         {
             NavigationService = navigationService;
             AlertService = pageDialogService;
-            FilmsService = filmsService;
         }
         public event PropertyChangedEventHandler PropertyChanged;
     }

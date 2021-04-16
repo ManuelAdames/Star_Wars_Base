@@ -8,7 +8,7 @@ namespace Star_Wars_Base.Models
     public class Vehicles
     {
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string VehiclesName { get; set; }
 
         [JsonProperty("model")]
         public string Model { get; set; }

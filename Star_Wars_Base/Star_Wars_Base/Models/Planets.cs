@@ -8,7 +8,7 @@ namespace Star_Wars_Base.Models
     public class Planets
     {
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string PlanetsName { get; set; }
 
         [JsonProperty("rotation_period")]
         public string RotationPeriod { get; set; }

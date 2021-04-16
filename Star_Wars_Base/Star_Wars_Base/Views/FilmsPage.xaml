@@ -5,6 +5,7 @@
              BackgroundImageSource="FilmsWallpaper.jpg">
     <StackLayout Padding="10" Spacing="80">
         <Label Text="Films" Style="{StaticResource titleStyle}"/>
+        <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
         <ListView x:Name="FilmsList" ItemsSource="{Binding FilmsCollection}" ItemTapped="FilmsList_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -15,7 +16,6 @@
                             <Label Text="{Binding FilmTitle}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
                         </StackLayout>
                     </ViewCell>
-                    <!--<TextCell Text="{Binding Title}" TextColor="Yellow"/>-->
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

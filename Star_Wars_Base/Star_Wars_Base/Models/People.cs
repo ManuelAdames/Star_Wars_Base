@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace Star_Wars_Base.Models
@@ -8,7 +9,7 @@ namespace Star_Wars_Base.Models
     public class People
     {
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string PeopleName { get; set; }
 
         [JsonProperty("height")]
         public string Height { get; set; }
@@ -35,16 +36,16 @@ namespace Star_Wars_Base.Models
         public string Homeworld { get; set; }
 
         [JsonProperty("films")]
-        public IList<string> Films { get; set; }
+        public ObservableCollection<string> Films { get; set; }
 
         [JsonProperty("species")]
-        public IList<string> Species { get; set; }
+        public ObservableCollection<string> Species { get; set; }
 
         [JsonProperty("vehicles")]
-        public IList<string> Vehicles { get; set; }
+        public ObservableCollection<string> Vehicles { get; set; }
 
         [JsonProperty("starships")]
-        public IList<string> Starships { get; set; }
+        public ObservableCollection<string> Starships { get; set; }
 
         [JsonProperty("created")]
         public DateTime Created { get; set; }
@@ -69,7 +70,7 @@ namespace Star_Wars_Base.Models
         public object Previous { get; set; }
 
         [JsonProperty("results")]
-        public IList<People> ResultsPeople { get; set; }
+        public ObservableCollection<People> ResultsPeople { get; set; }
     }
 }
 

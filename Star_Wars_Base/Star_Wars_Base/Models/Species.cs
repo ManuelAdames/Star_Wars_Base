@@ -8,7 +8,7 @@ namespace Star_Wars_Base.Models
     public class Species
     {
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string SpeciesName { get; set; }
 
         [JsonProperty("classification")]
         public string Classification { get; set; }
