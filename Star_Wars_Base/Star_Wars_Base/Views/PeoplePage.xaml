@@ -6,12 +6,12 @@
     <StackLayout Padding="10" Spacing="80">
         <Label Text="People" Style="{StaticResource titleStyle}"/>
         <ActivityIndicator IsRunning="{Binding IIsBusy}" IsVisible="{Binding IIsBusy}"/>
-        <ListView x:Name="PeopleList" ItemsSource="{Binding PeopleCollection}">
+        <ListView x:Name="PeopleList" ItemsSource="{Binding PeopleCollection}" ItemTapped="PeopleList_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout HorizontalOptions="Center">
-                            <Label Text="{Binding PeopleName}" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
+                            <Label Text="{Binding PeopleName} " TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="20"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

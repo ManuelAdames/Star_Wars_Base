@@ -37,7 +37,12 @@ namespace Star_Wars_Base
             containerRegistry.RegisterForNavigation<StartPage, HomeViewModel>(NavigationConstants.StartPage);
             
             containerRegistry.RegisterForNavigation<FilmDetailPage, FilmsViewModel>(NavigationConstants.FilmDetailPage);
-            
+            containerRegistry.RegisterForNavigation<PeopleDetailPage, PeopleViewModel>(NavigationConstants.PeopleDetailPage);
+            containerRegistry.RegisterForNavigation<PlanetsDetailPage, PlanetsViewModel>(NavigationConstants.PlanetsDetailPage);
+            //containerRegistry.RegisterForNavigation<FilmDetailPage, FilmsViewModel>(NavigationConstants.FilmDetailPage);
+            //containerRegistry.RegisterForNavigation<FilmDetailPage, FilmsViewModel>(NavigationConstants.FilmDetailPage);
+            //containerRegistry.RegisterForNavigation<FilmDetailPage, FilmsViewModel>(NavigationConstants.FilmDetailPage);
+
             containerRegistry.Register<IFilmsService,FilmsService>();
             containerRegistry.Register<IPeopleService,PeopleService>();
             containerRegistry.Register<IPlanetsService, PlanetsService>();
