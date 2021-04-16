@@ -25,7 +25,6 @@ namespace Star_Wars_Base.ViewModels
         public MenuOption HomeOption { get; set; } = new MenuOption();
         public MenuOption AboutUs { get; set; } = new MenuOption();
         public MenuOption Contact { get; set; } = new MenuOption();
-        public ICommand PeopleCommand { get; }
 
         public HomeViewModel(INavigationService navigationService, IPageDialogService pageDialogService) : base(navigationService, pageDialogService)
         {
@@ -38,18 +37,12 @@ namespace Star_Wars_Base.ViewModels
             HomeOption.Title = "Home";
             AboutUs.Title = "About Us";
             Contact.Title = "Contact";
-
-            PeopleCommand = new Command(OnPeople);
         }
 
-        private async void OnPeople(object obj)
-        {
-            await NavigationService.NavigateAsync("NavigationPage/People");
-        }
 
         public DelegateCommand HomeCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("Home"));
         public DelegateCommand FilmsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Films"));
-        //public DelegateCommand PeopleCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/People"));
+        public DelegateCommand PeopleCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/People"));
         public DelegateCommand PlanetsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Planets"));
         public DelegateCommand SpeciesCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Species"));
         public DelegateCommand StarshipsCommand => new DelegateCommand(async () => await NavigationService.NavigateAsync("NavigationPage/Starships"));

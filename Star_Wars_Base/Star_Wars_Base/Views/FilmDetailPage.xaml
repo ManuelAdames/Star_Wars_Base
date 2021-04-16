@@ -4,10 +4,21 @@
              x:Class="Star_Wars_Base.Views.FilmDetailPage"
              BackgroundImageSource="FilmsWallpaper.jpg">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding FilmTitle}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" TextColor="Yellow" />
+        <StackLayout Padding="20" Spacing="20">
+            <Label Text="Title" VerticalOptions="Center" 
+                HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="18"/>
+            <Label x:Name="LabelFilmTitle"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="18" />
+            <Label x:Name="LabelDate"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="18"/>
+            <Label x:Name="LabelOpeningCrawl"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="18"/>
+            <Label x:Name="LabelDirector"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" TextColor="NavajoWhite" FontFamily="FullStarWarsFont" FontSize="18"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
