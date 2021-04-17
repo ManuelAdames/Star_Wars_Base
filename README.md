@@ -13,6 +13,7 @@ naves espaciales, etc.
 https://trello.com/b/FG3seM3z/app-star-wars-base
 
 -Screenshots:
+
 ![HomePage](https://user-images.githubusercontent.com/73866099/115101296-cb0f4200-9f10-11eb-8587-0a3d3ad92e42.PNG)
 ![InitialPage](https://user-images.githubusercontent.com/73866099/115101297-cc406f00-9f10-11eb-93a1-139e124c6473.PNG)
 ![MasterDetail](https://user-images.githubusercontent.com/73866099/115101299-cd719c00-9f10-11eb-8b21-a3c6ac9b82e8.PNG)
