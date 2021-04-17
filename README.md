@@ -25,9 +25,11 @@ https://trello.com/b/FG3seM3z/app-star-wars-base
 ![WhatsApp Image 2021-04-17 at 12 01 55 AM](https://user-images.githubusercontent.com/73866099/115101304-e0846c00-9f10-11eb-9058-bf91c2a09824.jpeg)
 
 ## Miembros del equipo:
-Jean Carlos Mendoza | 1078057
------------- | -------------
+
 Manuel Adames | 1073122
+------------ | -------------
+Jean Carlos Mendoza | 1078057
+
 
 ## API Utilizado
 SWAPI https://swapi.dev/documentation#people
