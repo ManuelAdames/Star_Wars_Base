@@ -1,4 +1,4 @@
-#Proyecto Final
+Proyecto Final
 
 -Descripcion del proyecto:
 Star Wars Base es una fuente de informacion sobre
@@ -24,6 +24,9 @@ https://trello.com/b/FG3seM3z/app-star-wars-base
 -Miembros del equipo:
 Jean Carlos Mendoza 1078057
 Manuel Adames 1073122
+
+-API Utilizado
+SWAPI 
 
 -Librerias utilizadas:
 Prism;
