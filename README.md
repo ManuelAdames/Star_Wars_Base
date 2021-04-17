@@ -5,7 +5,8 @@ Star Wars Base es una fuente de informacion sobre
 el mundo de Star Wars como son los personajes,planetas,razas,
 naves espaciales, etc.
  
--Mockup: 
+-Mockup:
+
 ![HomePage_Mockup](https://user-images.githubusercontent.com/73866099/115101306-e67a4d00-9f10-11eb-887c-bb1e892e8f58.PNG)
 ![InfoPage_Mockup](https://user-images.githubusercontent.com/73866099/115101307-e7ab7a00-9f10-11eb-9e9b-9e8d88311378.PNG)
 
