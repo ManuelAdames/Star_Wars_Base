@@ -43,3 +43,6 @@ Prism.Navigation;
 Prism.Services;
 Xamarin.Forms;
 Xamarin.Forms.Xaml;
+
+### Presentacion
+https://docs.google.com/presentation/d/11Q557ufABzYvCylqH4sEBrqx0zApNZvzBCYE3hWFlFI/edit?usp=sharing
