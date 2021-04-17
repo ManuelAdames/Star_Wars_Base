@@ -27,7 +27,7 @@ Jean Carlos Mendoza 1078057
 Manuel Adames 1073122
 
 -API Utilizado
-SWAPI 
+SWAPI https://swapi.dev/documentation#people
 
 -Librerias utilizadas:
 Prism;
