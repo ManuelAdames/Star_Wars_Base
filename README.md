@@ -1,5 +1,5 @@
-Proyecto Final
-
+<h1>Proyecto Final 
+ 
 -Descripcion del proyecto:
 Star Wars Base es una fuente de informacion sobre
 el mundo de Star Wars como son los personajes,planetas,razas,
@@ -23,9 +23,10 @@ https://trello.com/b/FG3seM3z/app-star-wars-base
 ![WhatsApp Image 2021-04-17 at 12 01 58 AM](https://user-images.githubusercontent.com/73866099/115101303-debaa880-9f10-11eb-8d22-db3baa1017c2.jpeg)
 ![WhatsApp Image 2021-04-17 at 12 01 55 AM](https://user-images.githubusercontent.com/73866099/115101304-e0846c00-9f10-11eb-9058-bf91c2a09824.jpeg)
 
--Miembros del equipo:
-Jean Carlos Mendoza 1078057
-Manuel Adames 1073122
+Miembros del equipo:
+Jean Carlos Mendoza | 1078057
+------------ | -------------
+Manuel Adames | 1073122
 
 -API Utilizado
 SWAPI https://swapi.dev/documentation#people
