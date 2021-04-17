@@ -1,6 +1,7 @@
-Proyecto Final 
+<h1> Proyecto Final 
  
--Descripcion del proyecto:
+<h2> Descripcion del proyecto:
+ 
 Star Wars Base es una fuente de informacion sobre
 el mundo de Star Wars como son los personajes,planetas,razas,
 naves espaciales, etc.
